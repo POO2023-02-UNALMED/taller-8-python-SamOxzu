@@ -3,8 +3,9 @@ from deportista import Deportista
 class Futbolista(Deportista):
     lista_futbolistas = []
 
-    def __init__(self, nombre, edad, altura, sexo, goles_marcados, tarjetas_rojas, pierna_habil):
-        super().__init__(nombre, edad, altura, sexo, deporte="Futbol", años_practicando=0)
+    # "Juan Pablo", 30, "1,80", "M", 12, 400, 1, "Derecha"
+    def __init__(self, nombre, edad, altura, sexo, años_practicando, goles_marcados, tarjetas_rojas, pierna_habil):
+        super().__init__(nombre, edad, altura, sexo, años_practicando, deporte="Futbol")
         self.__goles_marcados = goles_marcados
         self.__tarjetas_rojas = tarjetas_rojas
         self.__pierna_habil = pierna_habil
