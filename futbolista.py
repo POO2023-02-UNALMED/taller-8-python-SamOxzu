@@ -7,23 +7,24 @@ class Futbolista(Deportista):
         self.__tarjetas_rojas = tarjetas_rojas
         self.__pierna_habil = pierna_habil
 
-    def get_goles_marcados(self):
+    def getGolesMarcados(self):
         return self.__goles_marcados
 
     def set_goles_marcados(self, goles_marcados):
         self.__goles_marcados = goles_marcados
 
-    def get_tarjetas_rojas(self):
+    def getTarjetasRojas(self):
         return self.__tarjetas_rojas
 
     def set_tarjetas_rojas(self, tarjetas_rojas):
         self.__tarjetas_rojas = tarjetas_rojas
 
-    def get_pierna_habil(self):
+    def getPiernaHabil(self):
         return self.__pierna_habil
 
     def set_pierna_habil(self, pierna_habil):
         self.__pierna_habil = pierna_habil
 
     def __str__(self) -> str:
-        return f"Mi nombre es ${super().get_nombre} soy profesional en el deporte ${super().get_deporte} Tengo ${super().get_edad} años de edad y llevo ${super().get_años_practicando} años en el deporte"
+        #"Mi nombre es Juan Pablo soy profesional en el deporte Futbol Tengo 30 años de edad y llevo 12 años en el deporte"
+        return f"Mi nombre es ${self.getNombre()} soy profesional en el deporte ${self.getDeporte()} Tengo ${self.getEdad()} años de edad y llevo ${self.getAñosPracticando()} años en el deporte"
