@@ -1,9 +1,9 @@
 class Persona:
     def __init__(self, nombre, edad, altura, sexo):
-        self.nombre = nombre
-        self.edad = edad
-        self.altura = altura
-        self.sexo = sexo
+        self.__nombre = nombre
+        self.__edad = edad
+        self.__altura = altura
+        self.__sexo = sexo
 
     def get_nombre(self):
         return self.__nombre

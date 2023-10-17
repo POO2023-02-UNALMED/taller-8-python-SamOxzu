@@ -3,8 +3,8 @@ from persona import Persona
 class Deportista(Persona):
     def __init__(self, nombre, edad, altura, sexo, deporte, años_practicando):
         super().__init__(nombre, edad, altura, sexo)
-        self.deporte = deporte
-        self.años_practicando = años_practicando
+        self.__deporte = deporte
+        self.__años_practicando = años_practicando
 
     def get_deporte(self):
         return self.__deporte
@@ -17,3 +17,4 @@ class Deportista(Persona):
 
     def set_años_practicando(self, años_practicando):
         self.__años_practicando = años_practicando
+
