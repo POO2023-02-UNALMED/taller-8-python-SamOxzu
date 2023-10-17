@@ -24,3 +24,6 @@ class Futbolista(Deportista):
 
     def set_pierna_habil(self, pierna_habil):
         self.__pierna_habil = pierna_habil
+
+    def __str__(self) -> str:
+        return f"Mi nombre es ${super().get_nombre} soy profesional en el deporte ${super().get_deporte} Tengo ${super().get_edad} años de edad y llevo ${super().get_años_practicando} años en el deporte"
